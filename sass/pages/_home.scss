@@ -3,9 +3,13 @@
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin-top: 3.5rem;
+    margin-top: var(--header-height);
     padding: 0 1rem;
     min-height: 100vh;
+
+    &__content {
+        margin-top: 6rem;
+    }
 
     &__subtitle {
         color: #555;
