@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>سیر و سفر در دنیا</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container" id="nav">
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="" class="nav__link">خانه</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">خدمات</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">لیدرها</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">تماس با ما</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">درباره ما</a>
+                </li>
+                <li id="close" class="nav__item">
+                    <i class="bx bx-x"></i>
+                </li>
+            </ul>
+
+            <div class="nav__toggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </div>
+
+            <div class="nav__logo">
+                <i class="bx bxs-direction-left"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <!-- hero -->
+        <div class="hero container">
+
+            <section class="hero__content">
+                <h5 class="hero__subtitle">با ما جهان زیر پای شماست</h5>
+                <h1 class="hero__title">تور سیاحتی و گردشگری کاینات</h1>
+                <p class="hero__description">
+                    تیم گردشگری کاینات با بیش از 25 سال تجربه، همراه یا کادری حرفه ای و سابقه درخشان آماده ارائه خدمات
+                    به
+                    تمامی مشتریان ایرانی و خارجی می باشد.
+                </p>
+            </section>
+
+            <div class="hero__world">
+                <div class="hero__earth"></div>
+            </div>
+        </div>
+        <!-- /hero -->
+
+    </main>
+
+    <script>
+        const toggle = document.querySelector(".nav__toggle i");
+        const navList = document.querySelector(".nav__list");
+        const close = document.querySelector("#close");
+
+        toggle.addEventListener("click", () => {
+            navList.style.right = 0;
+        });
+
+        close.addEventListener("click", () => {
+            navList.style.right = "-100%";
+        });
+    </script>
+</body>
+
+</html>
